@@ -17,3 +17,16 @@ const loader = (el) => {
     }
   }, 300);
 };
+
+const typeText = (el, text) => {
+  let i = 0;
+
+  let typeInterval = setInterval(() => {
+    if (i < text.length) {
+      el.innerHTML += text.charAt(i);
+      i++;
+    } else {
+      clearInterval(typeInterval);
+    }
+  }, 20);
+};
