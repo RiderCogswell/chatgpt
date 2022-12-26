@@ -37,3 +37,17 @@ const uniqueId = () => {
   const hexString = random.toString(16);
   return `id - ${timestamp}-${hexString}`;
 }
+
+const chatStripe = (isAi, val, uuid) => {
+  return(
+    `
+      <div class="wrapper ${isAi && 'ai'}">
+        <div class="chat">
+          <div class="profile">
+            <img src="${isAi ? bot : user}" alt="${isAi ? 'bot' : 'user'}" />
+          </div>
+          <div class="message" id="${uuid}">${val}</div>
+        </div>
+      </div>
+    `)
+};
