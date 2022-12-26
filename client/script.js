@@ -30,3 +30,10 @@ const typeText = (el, text) => {
     }
   }, 20);
 };
+
+const uniqueId = () => {
+  const timestamp = Date().now();
+  const random = Math.random();
+  const hexString = random.toString(16);
+  return `id - ${timestamp}-${hexString}`;
+}
