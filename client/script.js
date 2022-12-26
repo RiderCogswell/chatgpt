@@ -51,3 +51,22 @@ const chatStripe = (isAi, val, uuid) => {
       </div>
     `)
 };
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  chatContainer.innerHTML += chatStripe(false, data.get('prompt'));
+
+  form.reset();
+
+  const uniqueId = uniqueId();
+  chatcontainer.innerHTML += chatStripe(true, ' ', uniqueId);
+
+  chatContainer.scrollTop = chatContainer.scrollHeight;
+
+  const messageDiv = document.getElementById(uniqueId);
+
+  loader(messageDiv);
+};
