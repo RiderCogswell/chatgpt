@@ -11,7 +11,7 @@ Professional ChatGPT clone built with HTML, CSS, and JavaScript, along with the 
   - [Questions](#questions)
 
 ## Installation
-[For help with Sanity, visit the documentation here!](https://www.sanity.io/docs/overview-introduction) 
+[For help with ChatGPT, visit the documentation here!](https://beta.openai.com/docs/introduction) 
 
 ## Usage
 In order to test out the application, clone this starter code into your code editor, open your terminal/command line, and from the root of the application run "npm run dev", follow the prompts, and enjoy! Or if you just want a little taste, click [here]() to visit the deployed application!
